@@ -1,0 +1,75 @@
+repo: 'accessibility-fixer-upper'
+canvasCourse: 'web-dev-3'
+
+naming: true
+restrictFileTypes: true
+liveWebsite: true
+
+git:
+  numCommits: 2
+  allCommitted: true
+  allSynced: true
+
+html:
+  - path: 'index.html'
+    valid: true
+    bestPractices: true
+    outline: true
+    performance: true
+    has:
+      - ['link[href*="modules.css"] + link[href*="grid.css"]', 'The `modules.css` file must come before the `grid.css` file']
+      - ['link[href*="grid.css"] + link[href*="type.css"]', 'The `grid.css` file must come before the `type.css` file']
+      - ['link[href*="type.css"] + link[href*="main.css"]', 'The `type.css` file must come before the `main.css` file']
+      - ['link[href*="Merriweather"]', 'The Google Font, `Merriweather` (regular, italic & bold) is missing']
+      - 'ul.skip-links'
+      - ['.skip-links a[href="#main"]', 'The `.skip-links` should have a link to the main content, jumping to the ID of `#main`']
+      - ['.skip-links a[href="#nav"]', 'The `.skip-links` should have a link to the navigation, jumping to the ID of `#nav`']
+      - 'header[role="banner"]'
+      - 'nav[role="navigation"]'
+      - 'nav#nav'
+      - ['.nav a[href="#about"]', 'The “About” link should jump down the page to an element with the ID of `#about`']
+      - ['.nav a[href="#shrubs"]', 'The “Shrubs” link should jump down the page to an element with the ID of `#shrubs`']
+      - ['.nav a[href="#prices"]', 'The “Prices” link should jump down the page to an element with the ID of `#prices`']
+      - ['.nav a[href="#news"]', 'The “News” link should jump down the page to an element with the ID of `#news`']
+      - ['.nav a[href="#contact"]', 'The “About” link should jump down the page to an element with the ID of `#contact`']
+      - 'main[role="main"]'
+      - 'main#main'
+      - 'section#shrubs'
+      - ['#shrubs img[src*="shrub-1"][aria-describedat][alt=""]', 'The “Grassy shrubs” `<img>` tag needs more description than an `alt=""` can provide, `aria-describedat=""` should point to an ID with all the necessary information.']
+      - ['#shrubs img[src*="shrub-2"][aria-describedat][alt=""]', 'The “Shrubs with laurels” `<img>` tag needs more description than an `alt=""` can provide, `aria-describedat=""` should point to an ID with all the necessary information.']
+      - ['#shrubs img[src*="shrub-3"][aria-describedat][alt=""]', 'The “Two-level shrubbery” `<img>` tag needs more description than an `alt=""` can provide, `aria-describedat=""` should point to an ID with all the necessary information.']
+      - ['#shrubs > div > ul > li:first-child > div[id]', 'All the `<div>` tags within the “Products” list, that come after the `<img>` tags, should have IDs that `aria-describedat` can point to.']
+      - ['#shrubs > div > ul > li:nth-child(2) > div[id]', 'All the `<div>` tags within the “Products” list, that come after the `<img>` tags, should have IDs that `aria-describedat` can point to.']
+      - ['#shrubs > div > ul > li:last-child > div[id]', 'All the `<div>` tags within the “Products” list, that come after the `<img>` tags, should have IDs that `aria-describedat` can point to.']
+      - 'section#prices'
+      - 'table caption'
+      - 'table > thead th:nth-child(2)[scope="col"]'
+      - 'table > thead th:nth-child(3)[scope="col"]'
+      - 'table > thead th:nth-child(4)[scope="col"]'
+      - 'table > tbody tr:nth-child(1) > th[scope="row"]'
+      - 'table > tbody tr:nth-child(2) > th[scope="row"]'
+      - 'table > tbody tr:nth-child(3) > th[scope="row"]'
+      - 'section#news'
+      - 'form div:nth-child(1) label[for]'
+      - 'form div:nth-child(1) input[id]'
+      - 'form div:nth-child(2) label[for]'
+      - 'form div:nth-child(2) input[id]'
+      - 'form div:nth-child(2) input[type]'
+      - 'form div:nth-child(3) label[for]'
+      - 'form div:nth-child(3) select[id]'
+      - 'footer[role="contentinfo"]'
+    searchNot:
+      - '\<title\>Things and stuff and junk\<\/title\>'
+
+css:
+  - path: 'css/main.css'
+    valid: true
+    bestPractices: true
+    hasNot:
+      - ['a', ['text-decoration'], 'Links not part of navigation should always be underlined.']
+    search:
+      - ['.nav a:focus', 'There should be `:focus` states for the navigation links.']
+
+screenshots:
+  - path: 'index.html'
+    sizes: [320, 960]

@@ -1,0 +1,106 @@
+html {
+  font-family: Merriweather, serif;
+}
+
+.color-brand {
+  color: #568c36;
+}
+
+.color-brand-dark {
+  color: #113c00;
+}
+
+a {
+  color: #568c36;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #113c00;
+}
+
+.max-length {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.masthead {
+  background-color: #568c36;
+
+  color: #fff;
+}
+
+.nav {
+  position: relative;
+  background-color: #113c00;
+  z-index: 2;
+}
+
+.nav a {
+  display: inline-block;
+  padding: .5rem .75rem;
+
+  color: #fff;
+  text-decoration: none;
+}
+
+.nav a:hover {
+  background-color: #fff;
+  color: #113c00;
+}
+
+.about {
+  position: relative;
+}
+
+.about-content {
+  background-color: #113c00;
+  color: #fff;
+}
+
+.prices {
+  background-color: #f5f2f0;
+}
+
+th,
+td {
+  border-color: #dfdcda;
+}
+
+.news {
+  background-color: #eeebe9;
+}
+
+.contact {
+  background-color: #dfdcda;
+}
+
+.btn {
+  background-color: #113c00;
+  border-color: #113c00;
+
+  color: #fff;
+}
+
+.btn:hover {
+  background-color: #568c36;
+  border-color: #568c36;
+}
+
+.footer {
+  background-color: #113c00;
+  color: #fff;
+}
+
+@media only screen and (min-width: 35em) {
+
+  .about-content {
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+
+    background-color: transparent;
+    background-image: linear-gradient(to bottom, rgba(17, 60, 0, 0), rgba(17, 60, 0, .8));
+  }
+
+}
