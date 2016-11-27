@@ -21,8 +21,6 @@ Pass all of Markbot’s accessibility requirements and visually match the images
 
 - Final screenshots in the “screenshots” folder.
 
-**Be sure to consult the [Accessibility checklist](http://learn-the-web.algonquindesign.ca/topics/accessibility-checklist/) to make sure you find everything.**
-
 ---
 
 ## Hand in
