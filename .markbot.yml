@@ -50,6 +50,9 @@ html:
       - 'table > tbody tr:nth-child(2) > th[scope="row"]'
       - 'table > tbody tr:nth-child(3) > th[scope="row"]'
       - 'section#news'
+      - ['#news ol li:nth-child(1) p a[aria-label]', 'The “Read more” links need unique `aria-label` attributes because the text is all the same but they link to different locations.']
+      - ['#news ol li:nth-child(2) p a[aria-label]', 'The “Read more” links need unique `aria-label` attributes because the text is all the same but they link to different locations.']
+      - ['#news ol li:nth-child(3) p a[aria-label]', 'The “Read more” links need unique `aria-label` attributes because the text is all the same but they link to different locations.']
       - 'form div:nth-child(1) label[for]'
       - 'form div:nth-child(1) input[id]'
       - 'form div:nth-child(2) label[for]'
