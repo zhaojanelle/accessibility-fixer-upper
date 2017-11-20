@@ -19,11 +19,6 @@ a:hover {
   color: #113c00;
 }
 
-.max-length {
-  margin-left: 0;
-  margin-right: 0;
-}
-
 .masthead {
   background-color: #568c36;
 
@@ -37,9 +32,6 @@ a:hover {
 }
 
 .nav a {
-  display: inline-block;
-  padding: .5rem .75rem;
-
   color: #fff;
   text-decoration: none;
 }
