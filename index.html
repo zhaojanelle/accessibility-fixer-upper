@@ -82,17 +82,18 @@
 
     <section id="prices" class="prices pad-t pad-b">
       <article class="wrapper gutter-1-2">
-        <h2 class="push-0 color-brand-dark">Prices</h2>
-        <p class="mega max-length not-centered">Even those who arrange and design shrubberies are under considerable economic stress at this period in history.</p>
-
         <table>
+          <caption>
+            <h2 class="push-0 color-brand-dark">Prices</h2>
+            <p class="mega max-length not-centered">Even those who arrange and design shrubberies are under considerable economic stress at this period in history.</p>
+          </caption>
           <thead>
-            <tr>
+            <th scope="row">
               <th>&nbsp;</th>
               <th scope="col">Small</th>
               <th scope="col">Medium</th>
               <th scope="col">Large</th>
-            </tr>
+            </th>
           </thead>
           <tbody>
             <tr>
@@ -134,7 +135,7 @@
           </li>
           <li class="push">
             <h3 class="push-0"><a href="#">Greens of any kind!</a></h3>
-            <p class="push-0">I now sell and plant more than just shrubs! Greens of any kind: lettuce, kale, onions, grasses, trees, etc. <a href="#" aria-label="Read more about greens of any "kind">Read&nbsp;more…</a></p>
+            <p class="push-0">I now sell and plant more than just shrubs! Greens of any kind: lettuce, kale, onions, grasses, trees, etc. <a href="#" aria-label="Read more about greens of any kind">Read&nbsp;more…</a></p>
           </li>
         </ol>
       </article>
@@ -146,16 +147,16 @@
         <p class="mega max-length not-centered gutter-1-2">We want… a shrubbery!</p>
         <form class="grid" method="post" action="#">
           <div class="unit [ xs-1 s-1 m-1-2 l-1-3 ] push gutter-1-2">
-            <span class="push-1-8">Your name</span>
-            <input>
+            <label class="push-1-8" for="name">Your name</label>
+            <input type="text" id="name">
           </div>
           <div class="unit [ xs-1 s-1 m-1-2 l-1-3 ] push gutter-1-2">
-            <span class="push-1-8">E-mail address</span>
-            <input>
+            <label class="push-1-8" for="email">E-mail address</label>
+            <input type="email" id="email">
           </div>
           <div class="unit [ xs-1 s-1 m-1-2 l-1-3 ] push gutter-1-2">
-            <span class="push-1-8">Type of shrubbery</span>
-            <select>
+            <label class="push-1-8" for="shrubberytype">Type of shrubbery</label>
+            <select id="shrubberytype">
               <option>Two-level shrubbery</option>
               <option>Small shrubbery</option>
               <option>Shrubbery with laurels</option>
