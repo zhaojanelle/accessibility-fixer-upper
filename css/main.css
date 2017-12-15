@@ -45,6 +45,10 @@ a:hover {
   outline: 3px solid #000;
 }
 
+.read-more {
+  color: #113c00;
+}
+
 .about {
   position: relative;
 }
