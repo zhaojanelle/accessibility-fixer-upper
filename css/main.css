@@ -12,15 +12,11 @@ html {
 
 a {
   color: #568c36;
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 a:hover {
   color: #113c00;
-}
-
-a:focus {
-  outline: 3px solid #000;
 }
 
 .masthead {
@@ -43,6 +39,10 @@ a:focus {
 .nav a:hover {
   background-color: #fff;
   color: #113c00;
+}
+
+.nav a:focus {
+  outline: 3px solid #000;
 }
 
 .about {
